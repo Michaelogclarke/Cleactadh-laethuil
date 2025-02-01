@@ -1,0 +1,94 @@
+#root {
+  background: #fff585;
+}
+.nav-wrapper{
+  top:1rem;
+  position: relative;
+  flex: content;
+}
+
+.nav-items{
+  list-style-type: none;  
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+li{
+  text-decoration: none;
+  color: black;
+  display: inline;
+}
+
+.Home {
+  position: relative;
+}
+
+.Poems{
+  position: relative;
+}
+
+.Books{
+  position: relative;
+}
+
+.News{
+  position: relative;
+}
+
+.content-wrapper{
+  position: relative;
+  display: grid;
+  flex-direction: column;
+  left: 5rem;
+  gap: 1rem;
+}
+
+.first-Card{
+  position: relative;
+  display: grid;
+  background-color: #ece37b;
+  /* background-color: #f5ee8e; */
+  width: 458px;
+  height: 283px;
+  overflow-wrap:break-word;
+}
+.first-Title{
+  grid-row: 1;
+}
+
+.first-Content{
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.first-Author{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column: 2;
+}
+
+.card{
+  width: 458px;
+  height: 283px;
+  color: black;
+  display: grid;
+  background-color: #ece37b;
+}
+
+.card-title{
+  grid-column: 1;
+  grid-row: 1;
+}
+.card-content{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.card-author{
+  grid-column: 2;
+  grid-row: 3;
+}

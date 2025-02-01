@@ -1,0 +1,15 @@
+     {/* <div className='first-Card'>
+           <a className='first-Title'>Title</a>
+           <a className='first-Content'>Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat. Nullam nam arcu facilisi, neque inceptos parturient. Egestas elementum laoreet etiam,Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat. Nullam nam arcu facilisi, neque inceptos parturient. Egestas elementum laoreet etiam,</a>
+           <a className='first-Author'>Beth Turley</a>
+        </div> 
+        <div className='second-Card'>        
+           <a className='second-Title'>Title</a>
+           <a className='second-Content'>Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat. Nullam nam arcu facilisi, neque inceptos parturient. Egestas elementum laoreet etiam,</a>
+           <a className='second-Author'>Caroline forbes</a>
+       </div> 
+        <div className='third-Card'>
+           <a className='third-Title'>Title</a>
+           <a className='third-Content'>Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat. Nullam nam arcu facilisi, neque inceptos parturient. Egestas elementum laoreet etiam,</a>
+           <a className='third-Author'>Caroline forbes</a>
+        </div>  */}
