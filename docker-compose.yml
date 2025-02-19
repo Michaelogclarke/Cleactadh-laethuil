@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  vite:
+    build: .
+    ports:
+      - "5173:5173" # Expose Vite's default dev server
+    volumes:
+      - .:/app # Mounts project directory for live updates
+      - /app/node_modules # Avoids overwriting node_modules
+    environment:
+      - NODE_ENV=development
+    command: ["npm", "run", "dev"]
+

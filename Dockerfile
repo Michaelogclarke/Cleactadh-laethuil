@@ -1,30 +1,20 @@
-# Use official Node.js image as base
-FROM node:18 AS build
+# Use the latest stable Node.js (18 or 20)
+FROM node:18-alpine
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json first (for better caching)
-COPY package.json package-lock.json ./
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the app files
+# Copy the rest of the application
 COPY . .
 
-# Build the Vite project
-RUN npm run build
+# Expose the Vite dev server port
+EXPOSE 5173
 
-# Use a lightweight web server for the final container
-FROM nginx:alpine
-
-# Copy the build output from the previous stage
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
-
+# Start the Vite dev server
+CMD ["npm", "run", "dev"]
