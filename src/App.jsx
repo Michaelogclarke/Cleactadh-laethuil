@@ -1,44 +1,52 @@
-import { useState } from 'react'
-import './App.css'
-import Card from './Card' // Importing card Compenent
+import react from "react";
+import Auth from "./Auth";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <div className="container">
+            <header>
+                <div className="logo">🌐</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" className="active">Home</a></li>
+                        <li><a href="#">Poems</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-  return (
-    <div className='app-wrapper'>
-        <nav className='nav-wrapper'>
-          <ul className='nav-items'>
-            <li className='Home'>Home</li>
-            <li className='Poems'>Poems</li>
-            <li className='Books'>Books</li>
-            <li className='News'>News</li>
-          </ul>
-        </nav>
-      <body>
-    
-       <div className='content-wrapper'>
-        <Card
-          title='Title'
-          content='Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat.Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat.'
-          author='- Beth Turley'>
-        </Card>
+            <main>
+                <section className="content">
+                    <div className="post">
+                        <h3>Name</h3>
+                        <p>Content (Lorem ipsum dolor sit amet, consectetur adipiscing elit...)</p>
+                        <p className="author">- Author</p>
+                    </div>
 
-        <Card
-          title='Title'
-          content='Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat.Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat.'
-          author='- Caroline forbes'>
-        </Card>
-        
-        <Card
-          title='Title'
-          content='Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat.Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor per aenean mattis eleifend mauris vitae tellus malesuada consequat.'
-          author='- Caroline forbes'>
-        </Card>
-       </div>
-      </body>
-    </div>
-  )
+                    <div className="post">
+                        <h3>Name</h3>
+                        <p>Content (Lorem ipsum dolor sit amet, consectetur adipiscing elit...)</p>
+                        <p className="author">- Author</p>
+                    </div>
+
+                    <div className="post">
+                        <h3>Name</h3>
+                        <p>Content (Lorem ipsum dolor sit amet, consectetur adipiscing elit...)</p>
+                        <p className="author">- Author</p>
+                    </div>
+                </section>
+
+                <aside className="seanfhocal">
+                    <h3>SeanFhocail an La</h3>
+                    <div className="quote-box"></div>
+	    	    <Auth />
+                </aside>
+            </main>
+        </div>
+    );
 }
 
-export default App
+export default App;
+

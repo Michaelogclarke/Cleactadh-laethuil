@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "/home/michaelogclarke/Documents/Github/Cleactadh-laethuil/src",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
